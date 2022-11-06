@@ -1,0 +1,58 @@
+.mapa{
+    background: var(--vermelho-fatec);
+    display: flex;
+}
+
+.mapa:hover{
+    background: repeating-linear-gradient(
+        45deg,
+        var(--vermelho-fatec),
+        var(--vermelho-fatec) 5px,
+        var(--vermelho-claro-fatec) 5px,
+        var(--vermelho-claro-fatec) 10px
+    )
+}
+
+/*larg * alt*/
+/*Piso - 1050 x 375*/
+/*sala tipo 1 - 110 x 110*/
+/*sala tipo 2 - 110 x 130*/
+/*sala tipo 3 - 130 x 130*/
+/*banheiro - 90 x 110*/
+/*escadas - 90 x 85*/
+
+.piso-1{
+    background: var(--cinza-fatec);
+    height: 375px;
+    width: 1050px;
+}
+
+.sala-tipo-1{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 110px;
+    width: 110px;
+}
+
+.sala-tipo-2{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 130px;
+    width: 110px;
+}
+
+.sala-tipo-3{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 130px;
+    width: 130px;
+}
+
+.banheiro{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 110px;
+    width: 90px;
+}
+
+.escada{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 85px;
+    width: 90px;
+}

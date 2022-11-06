@@ -1,0 +1,49 @@
+<div class="container">
+    <h1 class="mt-4"> {{ ca.predio }}</h1>
+    <p> {{ ca.descricao }} </p>
+
+    <nav class="mt-4">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link" type="button" [class.active]="showTogglePiso1" (click)="alterarPiso(1)">Piso 1</a>
+            <a class="nav-item nav-link" type="button" [class.active]="showTogglePiso2" (click)="alterarPiso(2)">Piso 2</a>
+        </div>
+    </nav>
+    <div class="tab-content mt-2">
+        <app-mapa-ca-piso1 *ngIf="showTogglePiso1"></app-mapa-ca-piso1>
+        <app-mapa-ca-piso2 *ngIf="showTogglePiso2"></app-mapa-ca-piso2>
+    </div>
+
+    <h6 class="mt-4"> {{ sala.sala }}</h6>
+
+    <!-- TABELA -->
+    <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Segunda</th>
+            <th scope="col">Terça</th>
+            <th scope="col">Quarta</th>
+            <th scope="col">Quinta</th>
+            <th scope="col">Sexta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">19:00 - 20:40</th>
+            <td> - </td>
+            <td>IA</td>
+            <td>INGLÊS</td>
+            <td>GGTI</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <th scope="row">20:50 - 22:30</th>
+            <td> - </td>
+            <td>IA</td>
+            <td>ÉTICA</td>
+            <td>GGTI</td>
+            <td> - </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

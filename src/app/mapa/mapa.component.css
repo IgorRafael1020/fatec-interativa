@@ -1,8 +1,3 @@
-::ng-deep :root{
-    --vermelho-fatec: rgb(255,0,0);
-    --vermelho-claro-fatec: rgb(255,200,200);
-}
-
 .mapa{
     background: var(--vermelho-fatec);
 }
@@ -14,19 +9,130 @@
         var(--vermelho-fatec) 5px,
         var(--vermelho-claro-fatec) 5px,
         var(--vermelho-claro-fatec) 10px
-)
+    )
 }
 
-#ca-11{
-    clip-path: polygon(81% 92%, 99% 72%, 91% 65%, 93.5% 62%, 84% 54%, 82% 56.5%, 77% 52%,
-                        79.5% 49%, 70% 40.5%, 67% 44%, 60% 38%, 62.5% 35%, 52.5% 27%, 50% 30%,
-                        44% 25%, 46.5% 22%, 37.5% 14%, 35% 17%, 26% 10%, 7% 29%, 14.5% 35.5%,
-                        13% 37%, 22% 45%, 24% 43%, 31% 49%, 29% 51%, 37% 58%, 40% 55%, 47% 61%,
-                        44% 64%, 53.5% 72.5%, 56% 70%, 63% 76%, 60.5% 78.5%, 69.5% 86.5%, 72% 84%);
+#p-1{
+    clip-path: polygon(38% 76%, 51% 64%, 47% 60%, 62% 46%, 66% 50%, 82% 37%, 67% 22%, 48% 38%, 31% 22%, 24% 27%, 41% 44%, 22% 60%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-2{
+    clip-path: polygon(71% 74%, 82% 59%, 29% 25%, 18% 39%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-3-1{
+    clip-path: polygon(19% 60%, 26% 54%, 12% 24%, 5% 30%);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+#p-3-2{
+    clip-path: polygon(35% 50%, 49% 36%, 31% 8%, 20% 20%, 28% 34%, 27% 38%);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+#p-3-3{
+    clip-path: polygon(86% 91%, 97% 71%, 68% 44%, 61% 55%, 80% 72%, 75% 81%);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+#p-4{
+    clip-path: polygon(50% 97%, 78% 84%, 43% 6%, 14% 19%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-5{
+    clip-path: polygon(54% 98%, 86% 90%, 42% 5%, 9% 12%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-6{
+    clip-path: polygon(51% 98%, 91% 87%, 45% 4%, 5% 16%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-7{
+    clip-path: polygon(48% 93%, 60% 90%, 64% 99%, 83% 94%, 83% 92%, 97% 88%, 84% 62%, 67% 66%, 65% 61%, 78% 57%, 
+                        66% 31%, 52% 35%, 49% 29%, 59% 26%, 47% 2%, 9% 13%, 28% 51%, 39% 48%, 43% 57%, 32% 60%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-8{
+    clip-path: polygon(48% 95%, 88% 82%, 47% 10%, 8% 20%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-9{
+    clip-path: polygon(48% 99%, 96% 89%, 60% 29%, 55% 30%, 38% 3%, 4% 9%, 18% 37%, 11% 39%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-10{
+    clip-path: polygon(69% 83%, 85% 68%, 28% 15%, 12% 30%);
     height: 500px;
     width: 500px;
     /*background-image: url("../../../../campus 10.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;*/
+}
+
+#p-11{
+    clip-path: polygon(37% 100%, 98% 32%, 65% 1%, 3% 68%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-12{
+    clip-path: polygon(71% 84%, 84% 88%, 91% 88%, 91% 80%, 89% 70%, 78% 50%, 64% 33%, 42% 18%, 
+                        29% 14%, 17% 12%, 9% 13%, 7% 19%, 9% 28%, 17% 41%, 33% 61%, 55% 76%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-13{
+    clip-path: polygon(57% 94%, 94% 68%, 56% 13%, 19% 39%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-14{
+    clip-path: polygon(66% 99%, 100% 65%, 42% 5%, 7% 39%);
+    height: 500px;
+    width: 500px;
+}
+
+#p-15-1{
+    clip-path: polygon(29% 49%, 58% 36%, 30% 1%, 1% 14%);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+#p-15-2{
+    clip-path: polygon(76% 100%, 100% 83%, 64% 54%, 40% 70%);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+#p-16{
+    clip-path: polygon(55% 74%, 74% 42%, 27% 30%, 8% 60%);
+    height: 500px;
+    width: 500px;
 }

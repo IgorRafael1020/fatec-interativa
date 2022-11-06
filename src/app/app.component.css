@@ -1,0 +1,5 @@
+::ng-deep :root{
+    --vermelho-fatec: rgb(255,0,0);
+    --vermelho-claro-fatec: rgb(255,200,200);
+    --cinza-fatec: rgba(64,85,90,255);
+}
