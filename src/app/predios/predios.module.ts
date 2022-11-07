@@ -13,6 +13,7 @@ import { LabDePolimerosEProcessosMetalurgicosComponent } from './components/lab-
 import { LabDeTecnologiaDeInformacaoComponent } from './components/lab-de-tecnologia-de-informacao/lab-de-tecnologia-de-informacao.component';
 import { MapaCaPiso1Component } from './components/central-de-aulas/components/mapa-ca-piso1/mapa-ca-piso1.component';
 import { MapaCaPiso2Component } from './components/central-de-aulas/components/mapa-ca-piso2/mapa-ca-piso2.component';
+import { MapaP11Component } from './components/lab-de-tecnologia-de-informacao/components/mapa-p11/mapa-p11.component';
 
 
 
@@ -30,7 +31,8 @@ import { MapaCaPiso2Component } from './components/central-de-aulas/components/m
     LabDePolimerosEProcessosMetalurgicosComponent,
     LabDeTecnologiaDeInformacaoComponent,
     MapaCaPiso1Component,
-    MapaCaPiso2Component
+    MapaCaPiso2Component,
+    MapaP11Component
   ],
   imports: [
     CommonModule

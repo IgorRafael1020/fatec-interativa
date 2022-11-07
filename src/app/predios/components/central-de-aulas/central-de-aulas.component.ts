@@ -10,7 +10,7 @@ import { Sala } from 'src/app/shared/models/sala.model';
 })
 export class CentralDeAulasComponent implements OnInit {
 
-  ca: Predio = {} as Predio;
+  predio: Predio = {} as Predio;
   sala: Sala = {} as Sala;
   aula: Aula[] = {} as Aula[];
 
@@ -18,9 +18,9 @@ export class CentralDeAulasComponent implements OnInit {
   showTogglePiso2: boolean = false;
 
   constructor() {
-    this.ca.idPredio = 10;
-    this.ca.predio = "Central de Aulas"
-    this.ca.descricao = "Prédio pricipal da Fatec Sorocaba";
+    this.predio.idPredio = 10;
+    this.predio.predio = "Central de Aulas"
+    this.predio.descricao = "Prédio pricipal da Fatec Sorocaba";
 
     this.sala.idSala = 11;
     this.sala.sala = "Sala 11"

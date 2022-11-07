@@ -1,1 +1,40 @@
-<p>lab-de-tecnologia-de-informacao works!</p>
+<div class="container">
+    <h1 class="mt-4"> {{ predio.predio }}</h1>
+    <p> {{ predio.descricao }} </p>
+
+    <app-mapa-p11></app-mapa-p11>
+
+    <h6 class="mt-4"> {{ sala.sala }}</h6>
+
+    <!-- TABELA -->
+    <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Segunda</th>
+            <th scope="col">Terça</th>
+            <th scope="col">Quarta</th>
+            <th scope="col">Quinta</th>
+            <th scope="col">Sexta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">19:00 - 20:40</th>
+            <td> - </td>
+            <td>IA</td>
+            <td>INGLÊS</td>
+            <td>GGTI</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <th scope="row">20:50 - 22:30</th>
+            <td> - </td>
+            <td>IA</td>
+            <td>ÉTICA</td>
+            <td>GGTI</td>
+            <td> - </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

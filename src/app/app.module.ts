@@ -17,7 +17,7 @@ import { PrediosModule } from './predios/predios.module';
     MapaComponent,
     NavbarComponent,
     LoginComponent,
-    Error404Component,
+    Error404Component
   ],
   imports: [
     BrowserModule,

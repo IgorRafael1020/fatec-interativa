@@ -1,0 +1,73 @@
+/*larg * alt*/
+/*Piso - 1050 x 375*/
+/*sala tipo 1 - 110 x 110*/
+/*sala tipo 2 - 110 x 130*/
+/*sala tipo 3 - 130 x 130*/
+/*banheiro - 90 x 110*/
+/*escadas - 90 x 85*/
+
+#piso-1{
+    /*background: var(--cinza-fatec);*/
+    background-image: url("E:\Fatec\TG\campus\p11.png");
+    background-size: cover;
+    /* height: 552.5px;
+    width: 1059.5px; */
+    height: 510px;
+    width: 978px;
+}
+
+#cima * {
+    align-self: flex-end;
+}
+
+#direita * {
+    align-self: center;
+}
+
+.sala-tipo-1{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 150px;
+    width: 150px;
+}
+
+.sala-tipo-2{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 210px;
+    width: 150px;
+}
+
+.sala-tipo-3{
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 25% 74%, 25% 100%, 0 100%);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 17%;
+    margin-right: 18%
+}
+
+.sala-tipo-4{
+    clip-path: polygon(0 0, 25% 0, 25% 26%, 100% 26%, 100% 100%, 0 100%);
+    height: 150px;
+    width: 150px;
+    margin-top: 17%;
+    margin-right: 18%;
+}
+
+.sala-tipo-5{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 140px;
+    width: 110px;
+    position: absolute;
+    z-index: 1;
+}
+
+.banheiro{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 150px;
+    width: 120px;
+}
+
+.recepcao{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 150px;
+    width: 48px;
+}
