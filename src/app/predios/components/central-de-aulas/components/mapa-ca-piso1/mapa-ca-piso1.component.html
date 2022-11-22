@@ -1,22 +1,24 @@
-<div id="piso-1" class="container d-flex justify-content-center flex-wrap">
+<div id="piso-1" class="base container d-flex justify-content-center flex-wrap">
     <div id="cima" class="d-flex justify-content-center flex-wrap" style="height: 50%; width: 100%;">
-        <div class="mapa sala-tipo-2" style="margin: 0;"></div>
-        <div class="mapa sala-tipo-1"></div>
-        <div class="mapa escada"></div>
-        <div class="mapa sala-tipo-1" style="margin-right: 5%;"></div>
-        <div class="mapa sala-tipo-1" style="margin-left: 5%;"></div>
-        <div class="mapa banheiro" style="margin-bottom: 2%;"></div>
-        <div class="mapa sala-tipo-1"></div>
-        <div class="mapa sala-tipo-3" style="margin: 0;"></div>
+        <div class="mapa sala-tipo-2" style="margin: 0;" (click)="onClick(10)"></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(11)"></div>
+        <div class="cenario escada"><div class=" cenario elevador"></div></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(1)"></div>
+        <div class="sala-tipo-1"></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(1)"></div>
+        <div class="cenario banheiro" style="margin-bottom: 2%;"></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(1)"></div>
+        <div class="mapa sala-tipo-3" style="margin: 0;" (click)="onClick(1)"></div>
     </div>
     
     <div id="baixo" class="d-flex justify-content-center flex-wrap" style="height: 50%; width: 100%;">
         <div class="mapa sala-tipo-2" style="margin: 0;"></div>
         <div class="mapa sala-tipo-1"></div>
-        <div class="mapa banheiro" style="margin-top: 2%;"></div>
-        <div class="mapa sala-tipo-1" style="margin-right: 5%;"></div>
-        <div class="mapa sala-tipo-1" style="margin-left: 5%;"></div>
-        <div class="mapa escada"></div>
+        <div class="cenario banheiro" style="margin-top: 2%;"></div>
+        <div class="mapa sala-tipo-1"></div>
+        <div class="sala-tipo-1"></div>
+        <div class="mapa sala-tipo-1"></div>
+        <div class="cenario escada"><div class="cenario elevador"></div></div>
         <div class="mapa sala-tipo-1"></div>
         <div class="mapa sala-tipo-3" style="margin: 0;"></div>
     </div>

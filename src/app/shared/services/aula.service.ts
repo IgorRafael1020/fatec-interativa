@@ -17,8 +17,8 @@ export class AulaService {
         return this.http.get<Aula[]>(this.aulaURL);
     }
 
-    getBySala(): Observable<Aula[]>{
-        return this.http.get<Aula[]>(this.aulaURL + "/sala");
+    getBySala(idSala: number): Observable<Aula[]>{
+        return this.http.get<Aula[]>(this.aulaURL + "/sala/" + idSala);
     }
 
     getByProfessor(): Observable<Aula[]>{

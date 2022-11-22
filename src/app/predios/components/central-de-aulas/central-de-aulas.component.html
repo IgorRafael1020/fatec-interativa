@@ -9,7 +9,7 @@
         </div>
     </nav>
     <div class="tab-content mt-2">
-        <app-mapa-ca-piso1 *ngIf="showTogglePiso1"></app-mapa-ca-piso1>
+        <app-mapa-ca-piso1 *ngIf="showTogglePiso1" (idSala)="pesquisarHorariosSala($event)"></app-mapa-ca-piso1>
         <app-mapa-ca-piso2 *ngIf="showTogglePiso2"></app-mapa-ca-piso2>
     </div>
 
@@ -17,33 +17,33 @@
 
     <!-- TABELA -->
     <table class="table mt-4">
-        <thead>
-          <tr>
-            <th scope="col">Horário</th>
-            <th scope="col">Segunda</th>
-            <th scope="col">Terça</th>
-            <th scope="col">Quarta</th>
-            <th scope="col">Quinta</th>
-            <th scope="col">Sexta</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">19:00 - 20:40</th>
-            <td> - </td>
-            <td>IA</td>
-            <td>INGLÊS</td>
-            <td>GGTI</td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <th scope="row">20:50 - 22:30</th>
-            <td> - </td>
-            <td>IA</td>
-            <td>ÉTICA</td>
-            <td>GGTI</td>
-            <td> - </td>
-          </tr>
-        </tbody>
-      </table>
+      <thead>
+        <tr>
+          <th scope="col">Horário</th>
+          <th scope="col">Segunda</th>
+          <th scope="col">Terça</th>
+          <th scope="col">Quarta</th>
+          <th scope="col">Quinta</th>
+          <th scope="col">Sexta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="col-2" scope="row">19:00 - 20:40</th>
+          <td class="col-2"> - </td>
+          <td class="col-2 text-center">IA <br> Paulo Edson</td>
+          <td class="col-2">INGLÊS</td>
+          <td class="col-2">GGTI</td>
+          <td class="col-2"> - </td>
+        </tr>
+        <tr>
+          <th class="col-2" scope="row">20:50 - 22:30</th>
+          <td class="col-2"> - </td>
+          <td class="col-2">IA</td>
+          <td class="col-2">ÉTICA</td>
+          <td class="col-2">GGTI</td>
+          <td class="col-2"> - </td>
+        </tr>
+      </tbody>
+    </table>
 </div>

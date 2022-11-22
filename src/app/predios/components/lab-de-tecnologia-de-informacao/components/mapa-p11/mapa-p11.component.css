@@ -6,10 +6,15 @@
 /*banheiro - 90 x 110*/
 /*escadas - 90 x 85*/
 
-#piso-1{
+.base {
+    clip-path: polygon(5.5% 85.8%, 20.85% 85.8%, 20.85% 90.3%, 36.4% 90.3%, 36.4% 85.8%, 51.5% 85.8%, 51.5% 90.3%, 67.5% 90.3%, 67.5% 85.8%,
+    94.35% 85.8%, 94.35% 14.2%, 67.5% 14.2%, 67.5% 9.8%, 51.5% 9.8%, 51.5% 14.2%, 36.4% 14.2%, 36.4% 9.8%, 20.85% 9.8%, 20.85% 14.2%, 5.5% 14.2%);
+}
+
+#piso-1 {
     /*background: var(--cinza-fatec);*/
     /* background-image: url("E:\Fatec\TG\campus\p11.png"); */
-    background-size: cover;
+    /*background-size: cover;*/
     /* height: 552.5px;
     width: 1059.5px; */
     height: 510px;
@@ -24,7 +29,15 @@
     height: 66.84%;
 }
 
+#cima .banheiro {
+    height: 66.84%;
+}
+
 #baixo .sala-tipo-1 {
+    height: 52.52%;
+}
+
+#baixo .banheiro {
     height: 52.52%;
 }
 
@@ -33,52 +46,41 @@
 }
 
 .sala-tipo-1{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    /* height: 150px;
-    width: 150px; */
     width: 19.6%;
 }
 
 .sala-tipo-2{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    /* height: 210px;
-    width: 150px; */
-    height: 80%; /* */
+    height: 73.6%;
     width: 19.6%;
 }
 
 .sala-tipo-3{
-    clip-path: polygon(0 0, 100% 0, 100% 74%, 25% 74%, 25% 100%, 0 100%);
-    height: 150px;
-    width: 150px;
-    margin-bottom: 17%;
-    margin-right: 18%
+    height: 29.41%;
+    width: 76.69%;
+    margin-bottom: 16%;
+    margin-right: 23%
 }
 
 .sala-tipo-4{
-    clip-path: polygon(0 0, 25% 0, 25% 26%, 100% 26%, 100% 100%, 0 100%);
-    height: 150px;
-    width: 150px;
-    margin-top: 17%;
-    margin-right: 18%;
+    height: 29.41%;
+    width: 76.69%;
+    margin-top: 16.5%;
+    margin-right: 23%;
 }
 
 .sala-tipo-5{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 140px;
-    width: 110px;
+    height: calc(510 * 0.2745px);
+    width: calc(195.6 * 0.5624px);
     position: absolute;
     z-index: 1;
+    margin-right: 0.6%;
 }
 
 .banheiro{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 150px;
-    width: 120px;
+    width: 15.34%;
 }
 
 .recepcao{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 150px;
-    width: 48px;
+    height: 52.52%;
+    width: 6.13%;
 }

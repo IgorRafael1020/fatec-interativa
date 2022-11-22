@@ -2,8 +2,8 @@
     background: var(--vermelho-fatec);
     display: flex;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border-width: 1px;
+    border-color: rgb(104, 34, 34);
 }
 
 .mapa:hover{
@@ -14,4 +14,16 @@
         var(--vermelho-claro-fatec) 5px,
         var(--vermelho-claro-fatec) 10px
     )
+}
+
+.cenario{
+    background: var(--vermelho-claro-fatec);
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(148, 48, 48);
+}
+
+.base {
+    background: var(--cinza-fatec);
 }

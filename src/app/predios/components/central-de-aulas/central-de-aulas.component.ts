@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Aula } from 'src/app/shared/models/aula.model';
 import { Predio } from 'src/app/shared/models/predio.model';
 import { Sala } from 'src/app/shared/models/sala.model';
+import { AulaService } from 'src/app/shared/services/aula.service';
+import { PredioService } from 'src/app/shared/services/predio.service';
+import { SalaService } from 'src/app/shared/services/sala.service';
 
 @Component({
   selector: 'app-central-de-aulas',
@@ -12,20 +15,17 @@ export class CentralDeAulasComponent implements OnInit {
 
   predio: Predio = {} as Predio;
   sala: Sala = {} as Sala;
-  aula: Aula[] = {} as Aula[];
+  aulas: Aula[] = {} as Aula[];
 
   showTogglePiso1: boolean = true;
   showTogglePiso2: boolean = false;
 
-  constructor() {
-    this.predio.idPredio = 10;
-    this.predio.predio = "Central de Aulas"
-    this.predio.descricao = "Prédio pricipal da Fatec Sorocaba";
-
-    this.sala.idSala = 11;
-    this.sala.sala = "Sala 11"
-    this.sala.descricao = "Sala de Aula"
-    this.sala.idPredio = 10;
+  constructor(
+    private predioService: PredioService,
+    private salaService: SalaService,
+    private aulaService: AulaService
+  ) {
+    this.pesquisarPredio();
   }
 
   ngOnInit(): void {
@@ -40,5 +40,14 @@ export class CentralDeAulasComponent implements OnInit {
       this.showTogglePiso1 = false;
       this.showTogglePiso2 = true;
     }
+  }
+
+  pesquisarPredio() {
+    this.predioService.getById(10).subscribe((predio) => (this.predio = predio));
+  }
+
+  pesquisarHorariosSala(idSala: number) {
+    this.salaService.getById(idSala).subscribe((sala) => (this.sala = sala));
+    this.aulaService.getBySala(idSala).subscribe((aulas) => (this.aulas = aulas));
   }
 }
