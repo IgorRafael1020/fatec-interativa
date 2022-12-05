@@ -157,9 +157,9 @@
 
 #p-11{
     clip-path: polygon(1% 69%, 35% 100%, 100% 33%, 65% 0);
-    height: calc(72px * var(--escala-mapa));
-    width: calc(72px * var(--escala-mapa));
-    margin: 155% 0 0 70%;
+    height: calc(72px * var(--escala-mapa) * 0.9);
+    width: calc(72px * var(--escala-mapa) * 0.9);
+    margin: 158% 0 0 72%;
 }
 
 #p-12{
@@ -187,12 +187,12 @@
 #p-15{
     height: calc(95px * var(--escala-mapa));
     width: calc(75px * var(--escala-mapa));
-    margin: 10% 0 0 70%;
+    margin: 11% 0 0 70%;
 }
 
 #p-15 * {
-    height: calc(95px * var(--escala-mapa));
-    width: calc(75px * var(--escala-mapa));
+    height: calc(95px * var(--escala-mapa) * 0.95);
+    width: calc(75px * var(--escala-mapa) * 0.95);
     position: absolute;
 }
 

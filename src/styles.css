@@ -6,7 +6,17 @@
     border-color: rgb(104, 34, 34);
 }
 
-.mapa:hover{
+/* .mapa:hover{
+    background: repeating-linear-gradient(
+        45deg,
+        var(--vermelho-fatec),
+        var(--vermelho-fatec) 5px,
+        var(--vermelho-claro-fatec) 5px,
+        var(--vermelho-claro-fatec) 10px
+    )
+} */
+
+.sala-active {
     background: repeating-linear-gradient(
         45deg,
         var(--vermelho-fatec),

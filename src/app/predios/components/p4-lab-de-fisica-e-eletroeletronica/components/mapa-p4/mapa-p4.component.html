@@ -1,7 +1,7 @@
 <div class="base container d-flex justify-content-center flex-wrap">
         <div id="cima" class="d-flex justify-content-center flex-wrap" style="height: 56.5%; width: 100%;">
-            <div class="mapa" style="height: 92.5%; width: 12%;"><span class="numero" (click)="onClick(46)">6</span></div>
-            <div class="mapa" style="width: 19%;"><span class="numero" (click)="onClick(45)">5</span></div>
+            <div class="mapa" style="height: 92.5%; width: 12%;" (click)="onClick(46)" [class.sala-active]="sala46"><span class="numero">6</span></div>
+            <div class="mapa" style="width: 19%;" (click)="onClick(45)" [class.sala-active]="sala45"><span class="numero">5</span></div>
             <div class="d-flex flex-wrap" style="width: 6.2%;">
                 <div class="cenario" style="height: 50%; width: 100%; margin: 0;"></div>
                 <div class="cenario" style="height: 50%; width: 100%; margin: 0;"></div>
@@ -11,18 +11,18 @@
                 <div class="cenario" style="height: 67%; width: 50%; margin: 0;"><div class="banheiro-m"></div></div>
                 <div class="cenario" style="height: 33%; width: 28%; margin: 0;"><div class="banheiro-c"></div></div>
             </div>
-            <div class="mapa" style="width: 12%;" (click)="onClick(44)"><span class="numero">4</span></div>
-            <div class="mapa" style="width: 13%;" (click)="onClick(43)"><span class="numero">3</span></div>
-            <div class="mapa" style="width: 12%;" (click)="onClick(42)"><span class="numero">2</span></div>
-            <div class="mapa" style="width: 12%;" (click)="onClick(41)"><span class="numero">1</span></div>
+            <div class="mapa" style="width: 12%;" (click)="onClick(44)" [class.sala-active]="sala44"><span class="numero">4</span></div>
+            <div class="mapa" style="width: 13%;" (click)="onClick(43)" [class.sala-active]="sala43"><span class="numero">3</span></div>
+            <div class="mapa" style="width: 12%;" (click)="onClick(42)" [class.sala-active]="sala42"><span class="numero">2</span></div>
+            <div class="mapa" style="width: 12%;" (click)="onClick(41)" [class.sala-active]="sala41"><span class="numero">1</span></div>
         </div>
         
         <div id="baixo" class="d-flex justify-content-center flex-wrap" style="height: 43.5%; width: 100%;">
-            <div class="mapa" style="width: 36.5%;" (click)="onClick(47)"><span class="numero">7</span></div>
-            <div class="mapa" style="width: 12.5%;" (click)="onClick(48)"><span class="numero">8</span></div>
-            <div class="mapa" style="width: 25%;" (click)="onClick(49)"><span class="numero">9</span></div>
-            <div class="mapa" style="width: 12.3%;" (click)="onClick(50)"><span class="numero">10</span></div>
-            <div class="mapa" style="width: 6.2%;" (click)="onClick(51)"><span class="numero">11</span></div>
-            <div class="mapa" style="width: 6.2%;" (click)="onClick(52)"><span class="numero">12</span></div>
+            <div class="mapa" style="width: 36.5%;" (click)="onClick(47)" [class.sala-active]="sala47"><span class="numero">7</span></div>
+            <div class="mapa" style="width: 12.5%;" (click)="onClick(48)" [class.sala-active]="sala48"><span class="numero">8</span></div>
+            <div class="mapa" style="width: 25%;" (click)="onClick(49)" [class.sala-active]="sala49"><span class="numero">9</span></div>
+            <div class="mapa" style="width: 12.3%;" (click)="onClick(50)" [class.sala-active]="sala50"><span class="numero">10</span></div>
+            <div class="mapa" style="width: 6.2%;" (click)="onClick(51)" [class.sala-active]="sala51"><span class="numero">11</span></div>
+            <div class="mapa" style="width: 6.2%;" (click)="onClick(52)" [class.sala-active]="sala52"><span class="numero">12</span></div>
         </div>
 </div>

@@ -1,25 +1,25 @@
 <div class="base container d-flex justify-content-center flex-wrap">
     <div id="cima" class="d-flex justify-content-center flex-wrap" style="height: 50%; width: 100%;">
-        <div class="mapa sala-tipo-2" (click)="onClick(10)" style="margin: 0;"><span class="numero">10</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(11)"><span class="numero">11</span></div>
+        <div class="mapa sala-tipo-2" (click)="onClick(10)" style="margin: 0;" [class.sala-active]="sala10"><span class="numero">10</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(11)" [class.sala-active]="sala11"><span class="numero">11</span></div>
         <div class="cenario escada"><div class=" cenario elevador"><div class="elevator"></div></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(12)"><span class="numero">12</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(12)" [class.sala-active]="sala12"><span class="numero">12</span></div>
         <div class="sala-tipo-1"></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(1)"><span class="numero">1</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(1)" [class.sala-active]="sala1"><span class="numero">1</span></div>
         <div class="cenario banheiro" style="margin-bottom: 2%;"><div class="banheiro-f"></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(2)"><span class="numero">2</span></div>
-        <div class="mapa sala-tipo-3" (click)="onClick(3)" style="margin: 0;"><span class="numero">3</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(2)" [class.sala-active]="sala2"><span class="numero">2</span></div>
+        <div class="mapa sala-tipo-3" (click)="onClick(3)" style="margin: 0;" [class.sala-active]="sala3"><span class="numero">3</span></div>
     </div>
     
     <div id="baixo" class="d-flex justify-content-center flex-wrap" style="height: 50%; width: 100%;">
-        <div class="mapa sala-tipo-2" (click)="onClick(9)" style="margin: 0;"><span class="numero">9</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(8)"><span class="numero">8</span></div>
+        <div class="mapa sala-tipo-2" (click)="onClick(9)" style="margin: 0;" [class.sala-active]="sala9"><span class="numero">9</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(8)" [class.sala-active]="sala8"><span class="numero">8</span></div>
         <div class="cenario banheiro" style="margin-top: 2%;"><div class="banheiro-m"></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(7)"><span class="numero">7</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(7)" [class.sala-active]="sala7"><span class="numero">7</span></div>
         <div class="sala-tipo-1"></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(6)"><span class="numero">6</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(6)"[class.sala-active]="sala6"><span class="numero">6</span></div>
         <div class="cenario escada"><div class="cenario elevador"><div class="elevator"></div></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(5)"><span class="numero">5</span></div>
-        <div class="mapa sala-tipo-3" (click)="onClick(4)" style="margin: 0;"><span class="numero">4</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(5)" [class.sala-active]="sala5"><span class="numero">5</span></div>
+        <div class="mapa sala-tipo-3" (click)="onClick(4)" style="margin: 0;" [class.sala-active]="sala4"><span class="numero">4</span></div>
     </div>
 </div>

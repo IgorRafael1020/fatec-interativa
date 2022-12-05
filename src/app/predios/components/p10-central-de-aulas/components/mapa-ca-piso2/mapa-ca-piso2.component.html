@@ -1,25 +1,25 @@
 <div class="base container d-flex justify-content-center flex-wrap">
     <div id="cima" class="d-flex justify-content-center flex-wrap" style="height: 50%; width: 100%;">
-        <div class="mapa sala-tipo-2" (click)="onClick(23)" style="margin: 0;"><span class="numero">23</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(24)"><span class="numero">24</span></div>
+        <div class="mapa sala-tipo-2" (click)="onClick(23)" style="margin: 0;"  [class.sala-active]="sala23"><span class="numero">23</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(24)"  [class.sala-active]="sala24"><span class="numero">24</span></div>
         <div class="cenario escada"><div class="cenario elevador"><div class="elevator"></div></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(25)"><span class="numero">25</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(26)" style="margin-bottom: 2%;"><span class="numero">26</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(13)"><span class="numero">13</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(25)"  [class.sala-active]="sala25"><span class="numero">25</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(26)" style="margin-bottom: 2%;"  [class.sala-active]="sala26"><span class="numero">26</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(13)"  [class.sala-active]="sala13"><span class="numero">13</span></div>
         <div class="cenario banheiro" style="margin-bottom: 2%;"><div class="banheiro-f"></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(14)"><span class="numero">14</span></div>
-        <div class="mapa sala-tipo-3" (click)="onClick(15)" style="margin: 0;"><span class="numero">15</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(14)"  [class.sala-active]="sala14"><span class="numero">14</span></div>
+        <div class="mapa sala-tipo-3" (click)="onClick(15)" style="margin: 0;"  [class.sala-active]="sala15"><span class="numero">15</span></div>
     </div>
     
     <div id="baixo" class="d-flex justify-content-center flex-wrap" style="height: 50%; width: 100%;">
-        <div class="mapa sala-tipo-2" (click)="onClick(22)" style="margin: 0;"><span class="numero">22</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(21)"><span class="numero">21</span></div>
+        <div class="mapa sala-tipo-2" (click)="onClick(22)" style="margin: 0;"  [class.sala-active]="sala22"><span class="numero">22</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(21)"  [class.sala-active]="sala21"><span class="numero">21</span></div>
         <div class="cenario banheiro" style="margin-top: 2%;"><div class="banheiro-m"></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(20)"><span class="numero">20</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(19)" style="margin-top: 2%;"><span class="numero">19</span></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(18)"><span class="numero">18</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(20)"  [class.sala-active]="sala20"><span class="numero">20</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(19)" style="margin-top: 2%;"  [class.sala-active]="sala19"><span class="numero">19</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(18)"  [class.sala-active]="sala18"><span class="numero">18</span></div>
         <div class="cenario escada"><div class="cenario elevador"><div class="elevator"></div></div></div>
-        <div class="mapa sala-tipo-1" (click)="onClick(17)"><span class="numero">17</span></div>
-        <div class="mapa sala-tipo-3" (click)="onClick(16)" style="margin: 0;"><span class="numero">16</span></div>
+        <div class="mapa sala-tipo-1" (click)="onClick(17)"  [class.sala-active]="sala17"><span class="numero">17</span></div>
+        <div class="mapa sala-tipo-3" (click)="onClick(16)" style="margin: 0;"  [class.sala-active]="sala16"><span class="numero">16</span></div>
     </div>
 </div>
