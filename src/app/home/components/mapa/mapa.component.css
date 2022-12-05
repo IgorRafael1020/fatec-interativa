@@ -1,0 +1,244 @@
+.base {
+    --escala-mapa: 0.4;
+    height: calc(875px * var(--escala-mapa));
+    width: calc(590px * var(--escala-mapa));
+    background-image: url("../../../../assets/mapa-campus.png");
+    /* background-image: url("../../../../assets/campus.png"); */
+    background-size: cover;
+    background-color: white;
+}
+
+.esquerda{
+    height: 80%;
+    width: 35%;
+}
+
+.direita {
+    height: 80%;
+    width: 65%;
+}
+
+.direita-cima{
+    height: 58%;
+    width: 100%;
+}
+
+.direita-cima-esquerda{
+    height: 100%;
+    width: 35%;
+}
+
+.direita-cima-direita{
+    height: 100%;
+    width: 65%;
+}
+
+.direita-baixo{
+    height: 42%;
+    width: 100%;
+}
+
+.baixo{
+    height: 20%;
+    width: 100%;
+}
+
+#p1-p10{
+    height: calc(100px * var(--escala-mapa));
+    width: calc(146px * var(--escala-mapa));
+    margin: 0 0 0 1%;
+}
+
+#p1-p10 * {
+    height: calc(100px * var(--escala-mapa));
+    width: calc(146px * var(--escala-mapa));
+    position: absolute;
+}
+
+#p-1{
+    /* clip-path: polygon(0% 11%, 33% 42.5%, 3% 74%, 29% 100%, 48% 80%, 41% 73%, 72.5% 38%, 81% 46%, 100% 25%, 71% 0%, 43% 31%, 11% 0%); */
+    clip-path: polygon(55% 9%, 70% 29%, 57% 50%, 68.5% 66.5%, 77% 53%, 74% 49%, 88% 25%, 92% 31%, 100% 19%, 88% 1%, 75% 22%, 60% 1%);
+}
+
+#p-10{
+    clip-path: polygon(0 36%, 48% 100%, 63% 77%, 15% 13%);
+}
+
+#p-2{
+    clip-path: polygon(0 31%, 80% 100%, 100% 67%, 18% 0);
+    height: calc(51px * var(--escala-mapa));
+    width: calc(62px * var(--escala-mapa));
+    margin: 10% 0 0 27%;
+}
+
+#p-3{
+    height: calc(57px * var(--escala-mapa));
+    width: calc(77px * var(--escala-mapa));
+    margin: 2% 0 0 4%;
+}
+
+#p-3 * {
+    height: calc(57px * var(--escala-mapa));
+    width: calc(77px * var(--escala-mapa));
+    position: absolute;
+    margin: 0 0 0 calc(10px * var(--escala-mapa));;
+}
+
+#p-3-1{
+    clip-path: polygon(0 35%, 14% 67%, 22% 61%, 8% 29%);
+}
+
+#p-3-2{
+    clip-path: polygon(26% 35%, 22% 40%, 32% 53%, 49% 30%, 26% 0, 13% 18%);
+}
+
+#p-3-3{
+    clip-path: polygon(57% 60%, 81% 80%, 77% 90%, 89% 100%, 100% 75%, 63% 46%);
+}
+
+#p4-p5{
+    height: calc(95px * var(--escala-mapa));
+    width: calc(95px * var(--escala-mapa));
+    margin: 5% 0 0 21%;
+}
+
+#p4-p5 * {
+    height: calc(95px * var(--escala-mapa));
+    width: calc(95px * var(--escala-mapa));
+    position: absolute;
+}
+
+#p-4{
+    clip-path: polygon(0 27%, 30% 91%, 53% 80%, 23% 17%);
+}
+
+#p-5{
+    clip-path: polygon(42% 8%, 76% 100%, 100% 92%, 66% 0);
+}
+
+#p6-p7-p9{
+    height: calc(115px * var(--escala-mapa));
+    width: calc(105px * var(--escala-mapa));
+    margin: 45% 0 0 0;
+}
+
+#p6-p7-p9 * {
+    height: calc(115px * var(--escala-mapa));
+    width: calc(105px * var(--escala-mapa));
+    position: absolute;
+}
+
+#p-6{
+    clip-path: polygon(59% 48%, 80% 100%, 100% 93%, 79% 41%);
+}
+
+#p-7{
+    /* clip-path: polygon(48% 93%, 60% 90%, 64% 99%, 83% 94%, 83% 92%, 97% 88%, 84% 62%, 67% 66%, 65% 61%, 78% 57%, 
+                        66% 31%, 52% 35%, 49% 29%, 59% 26%, 47% 2%, 9% 13%, 28% 51%, 39% 48%, 43% 57%, 32% 60%); */
+    clip-path: polygon(0 23%, 13% 55%, 20% 53%, 22% 58%, 16% 60%, 26% 85%, 34% 82%, 37% 89%, 46% 86%, 45% 84%, 
+                    55% 80.5%, 48% 63%, 37% 67%, 35% 61%, 46% 57%, 39% 38%, 28% 42%, 26% 37%, 35% 33%, 28% 14%);
+}
+
+#p-9{
+    clip-path: polygon(43% 6%, 59% 46%, 78% 40%, 62% 0);
+}
+
+#p-8{
+    clip-path: polygon(2% 17%, 40% 100%, 100% 82%, 61% 0);
+    height: calc(26px * var(--escala-mapa));
+    width: calc(21px * var(--escala-mapa));
+    margin: 3% 0 0 10%;
+}
+
+#p-11{
+    clip-path: polygon(1% 69%, 35% 100%, 100% 33%, 65% 0);
+    height: calc(72px * var(--escala-mapa));
+    width: calc(72px * var(--escala-mapa));
+    margin: 173% 0 0 55%;
+}
+
+#p-12{
+    clip-path: polygon(71% 84%, 84% 88%, 91% 88%, 91% 80%, 89% 70%, 78% 50%, 64% 33%, 42% 18%, 
+                        29% 14%, 17% 12%, 9% 13%, 7% 19%, 9% 28%, 17% 41%, 33% 61%, 55% 76%);
+    height: calc(30px * var(--escala-mapa));
+    width: calc(28px * var(--escala-mapa));
+    margin: 163% 0 0 31.6%;
+}
+
+#p-13{
+    clip-path: polygon(1% 39%, 44% 99%, 98% 59%, 56% 0);
+    height: calc(31px * var(--escala-mapa));
+    width: calc(31px * var(--escala-mapa));
+    margin: 30% 0 0 12%;
+}
+
+#p-14{
+    clip-path: polygon(0 37%, 62% 97%, 100% 59%, 35% 0);
+    height: calc(27px * var(--escala-mapa));
+    width: calc(27px * var(--escala-mapa));
+    margin: 0.8% 0 0 2.3%;
+}
+
+#p-15{
+    height: calc(95px * var(--escala-mapa));
+    width: calc(75px * var(--escala-mapa));
+    margin: 15% 0 0 56%;
+}
+
+#p-15 * {
+    height: calc(95px * var(--escala-mapa));
+    width: calc(75px * var(--escala-mapa));
+    position: absolute;
+}
+
+#p-15-1{
+    clip-path: polygon(0 13%, 28% 49%, 57% 35%, 29% 0);
+}
+
+#p-15-2{
+    clip-path: polygon(38% 70%, 75% 99%, 99% 80%, 61% 51%);
+}
+
+#p-16{
+    clip-path: polygon(0 80%, 77% 99%, 100% 19%, 23% 0);
+    height: calc(8px * var(--escala-mapa));
+    width: calc(8px * var(--escala-mapa));
+    margin: 0 0 0 56.5%;
+}
+
+@media (min-width: 460px) {
+    .base{
+        --escala-mapa: 0.5;
+    }
+}
+
+@media (min-width: 580px) {
+    .base{
+        --escala-mapa: 0.6;
+    }
+}
+
+@media (min-width: 720px) {
+    .base{
+        --escala-mapa: 0.7;
+    }
+}
+
+@media (min-width: 980px) {
+    .base{
+        --escala-mapa: 0.8;
+    }
+}
+
+@media (min-width: 1200px) {
+    .base{
+        --escala-mapa: 0.9;
+    }
+}
+
+@media (min-width: 1400px) {
+    .base{
+        --escala-mapa: 1;
+    }
+}
+

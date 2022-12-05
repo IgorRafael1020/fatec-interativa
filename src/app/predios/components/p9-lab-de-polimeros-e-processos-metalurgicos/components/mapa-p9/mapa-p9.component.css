@@ -1,0 +1,128 @@
+/*larg * alt*/
+/*Piso - 1050 x 375*/
+/*sala tipo 1 - 110 x 110*/
+/*sala tipo 2 - 110 x 130*/
+/*sala tipo 3 - 130 x 130*/
+/*banheiro - 90 x 110*/
+/*escadas - 90 x 85*/
+
+.base {
+    clip-path: polygon(5.5% 85.8%, 20.85% 85.8%, 20.85% 90.3%, 36.4% 90.3%, 36.4% 85.8%, 51.5% 85.8%, 51.5% 90.3%, 67.5% 90.3%, 67.5% 85.8%,
+    94.35% 85.8%, 94.35% 14.2%, 67.5% 14.2%, 67.5% 9.8%, 51.5% 9.8%, 51.5% 14.2%, 36.4% 14.2%, 36.4% 9.8%, 20.85% 9.8%, 20.85% 14.2%, 5.5% 14.2%);
+}
+
+#piso-1 {
+    /*background: var(--cinza-fatec);*/
+    /* background-image: url("E:\Fatec\TG\campus\p11.png"); */
+    /*background-size: cover;*/
+    /* height: 552.5px;
+    width: 1059.5px; */
+    height: 510px;
+    width: 978px;
+}
+
+#cima * {
+    align-self: flex-end;
+}
+
+#cima .sala-tipo-1 {
+    height: 66.84%;
+}
+
+#cima .banheiro {
+    height: 66.84%;
+}
+
+#baixo .sala-tipo-1 {
+    height: 52.52%;
+}
+
+#baixo .banheiro {
+    height: 52.52%;
+}
+
+#direita * {
+    align-self: center;
+}
+
+.sala-tipo-1{
+    width: 19.6%;
+}
+
+.sala-tipo-2{
+    height: 73.6%;
+    width: 19.6%;
+}
+
+.sala-tipo-3{
+    height: 29.41%;
+    width: 76.69%;
+    margin-bottom: 16%;
+    margin-right: 23%
+}
+
+.sala-tipo-4{
+    height: 29.41%;
+    width: 76.69%;
+    margin-top: 16.5%;
+    margin-right: 23%;
+}
+
+.sala-tipo-5{
+    height: calc(510 * 0.2745px);
+    width: calc(195.6 * 0.5624px);
+    position: absolute;
+    z-index: 1;
+    margin-right: 0.6%;
+}
+
+.banheiro{
+    width: 15.34%;
+}
+
+.recepcao{
+    height: 52.52%;
+    width: 6.13%;
+}
+
+/* @media (min-width: 460px) {
+    .base {
+        height: 150px;
+        width: 420px;
+    }
+}
+
+@media (min-width: 580px) {
+    .base {
+        height: 196.875px;
+        width: 840px;
+    }
+}
+
+@media (min-width: 768px) {
+    .base {
+        height: 257.25px;
+        width: 1050px;
+    }
+}
+
+@media (min-width: 992px) {
+    .base {
+        height: 337.5px;
+        width: 945px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .base {
+        height: 337.5px;
+        width: 945px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .base {
+        height: 375px;
+        width: 1050px;
+    }
+} */

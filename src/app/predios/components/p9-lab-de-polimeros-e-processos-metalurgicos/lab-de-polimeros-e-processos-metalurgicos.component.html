@@ -1,0 +1,11 @@
+<div class="container">
+    <h1 class="mt-4"> {{ predio.predio }}</h1>
+    <p> {{ predio.descricao }} </p>
+
+    <app-mapa-p9 (idSala)="pesquisarHorariosSala($event)"></app-mapa-p9>
+
+    <h6 class="mt-4"> {{ sala.sala }}</h6>
+    <p> {{ sala.descricao }}</p>
+
+    <app-tabela #tabela></app-tabela>
+</div>

@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  baseURL: "http://localhost:8080"
+  baseURL: "/fatec-interativa"
+  // baseURL: "http://localhost:8075/fatec-interativa"
 };

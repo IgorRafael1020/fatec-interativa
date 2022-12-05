@@ -1,0 +1,77 @@
+.base {
+    clip-path: polygon(1.4% 96.5%, 98.8% 96.5%, 98.8% 4%, 1.4% 4%);
+    height: 380.8px;
+    width: 1148.8px;
+    /* background-image: url("../../../../../../../../campus/p6.png");
+    background-size: cover; */
+}
+
+.base-b-masculino {
+    background-color: var(--cinza-fatec);
+    height: 42%; 
+    width: 24.1%; 
+    margin: 0 0 auto auto;
+}
+
+#cima {
+    z-index: 2;
+    position: relative;
+}
+
+#cima * {
+    height: 78%;
+}
+
+.cima {
+    margin-top: 2%;
+}
+
+#direita {
+    position: relative;
+}
+
+.recepcao {
+    clip-path: polygon(0 0, 0 70%, 22% 70%, 22% 100%, 100% 100%, 100% 0);
+}
+
+/* @media (min-width: 460px) {
+    .base {
+        height: 150px;
+        width: 420px;
+    }
+}
+
+@media (min-width: 580px) {
+    .base {
+        height: 196.875px;
+        width: 840px;
+    }
+}
+
+@media (min-width: 768px) {
+    .base {
+        height: 257.25px;
+        width: 1050px;
+    }
+}
+
+@media (min-width: 992px) {
+    .base {
+        height: 337.5px;
+        width: 945px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .base {
+        height: 337.5px;
+        width: 945px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .base {
+        height: 375px;
+        width: 1050px;
+    }
+} */

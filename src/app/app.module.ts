@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { MapaComponent } from './mapa/mapa.component';
+import { HomeComponent } from './home/home.component';
+import { MapaComponent } from './home/components/mapa/mapa.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { LoginComponent } from './core/login/login.component';
 import { Error404Component } from './core/error404/error404.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PrediosModule } from './predios/predios.module';
+import { TabelaComponent } from './shared/components/tabela/tabela.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     MapaComponent,
     NavbarComponent,
     LoginComponent,
@@ -23,7 +27,8 @@ import { PrediosModule } from './predios/predios.module';
     BrowserModule,
     AppRoutingModule,
     PrediosModule,
-    HttpClientModule
+    HttpClientModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

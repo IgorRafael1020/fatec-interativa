@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="mt-4"> {{ predio.predio }}</h1>
+    <p> {{ predio.descricao }} </p>
+
+    <nav class="mt-4">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link" type="button" [class.active]="showTogglePiso1" (click)="alterarPiso(1)">Piso 1</a>
+            <a class="nav-item nav-link" type="button" [class.active]="showTogglePiso2" (click)="alterarPiso(2)">Piso 2</a>
+        </div>
+    </nav>
+    <div class="tab-content mt-2">
+        <app-mapa-ca-piso1 *ngIf="showTogglePiso1" (idSala)="pesquisarHorariosSala($event)"></app-mapa-ca-piso1>
+        <app-mapa-ca-piso2 *ngIf="showTogglePiso2" (idSala)="pesquisarHorariosSala($event)"></app-mapa-ca-piso2>
+    </div>
+
+    <h6 class="mt-4"> {{ sala.sala }}</h6>
+    <p> {{ sala.descricao }}</p>
+
+    <app-tabela #tabela></app-tabela>
+    
+</div>

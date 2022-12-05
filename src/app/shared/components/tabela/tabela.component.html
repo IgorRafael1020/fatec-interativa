@@ -1,0 +1,28 @@
+<nav class="mt-4">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link" type="button" [class.active]="showToggleSeg" (click)="alterarDia(2)">SEG</a>
+        <a class="nav-item nav-link" type="button" [class.active]="showToggleTer" (click)="alterarDia(3)">TER</a>
+        <a class="nav-item nav-link" type="button" [class.active]="showToggleQua" (click)="alterarDia(4)">QUA</a>
+        <a class="nav-item nav-link" type="button" [class.active]="showToggleQui" (click)="alterarDia(5)">QUI</a>
+        <a class="nav-item nav-link" type="button" [class.active]="showToggleSex" (click)="alterarDia(6)">SEX</a>
+        <a class="nav-item nav-link" type="button" [class.active]="showToggleSab" (click)="alterarDia(7)">SAB</a>
+    </div>
+</nav>
+<div class="tab-content mt-2">
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th scope="col">Horário</th>
+          <th scope="col">Aula</th>
+          <th scope="col">Professor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let aula of aulas">
+          <th class="col-4" scope="row"> {{ aula.horario }} </th>
+          <td class="col-4"> {{ aula.aula }} </td>
+          <td class="col-4"> {{ aula.professor }} </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
