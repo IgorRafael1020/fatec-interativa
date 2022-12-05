@@ -1,20 +1,24 @@
 .base {
     --escala-mapa: 0.4;
-    height: calc(875px * var(--escala-mapa));
-    width: calc(590px * var(--escala-mapa));
-    background-image: url("../../../../assets/mapa-campus.png");
-    /* background-image: url("../../../../assets/campus.png"); */
+    height: calc(919px * var(--escala-mapa));
+    width: calc(650px * var(--escala-mapa));
+    /* background-image: url("../../../../assets/mapa-campus.png"); */
+    background-image: url("../../../../assets/campus.png");
     background-size: cover;
     background-color: white;
 }
 
+.base * {
+    border: none;
+}
+
 .esquerda{
-    height: 80%;
+    height: 73.5%;
     width: 35%;
 }
 
 .direita {
-    height: 80%;
+    height: 73.5%;
     width: 65%;
 }
 
@@ -39,14 +43,14 @@
 }
 
 .baixo{
-    height: 20%;
+    height: 26%;
     width: 100%;
 }
 
 #p1-p10{
     height: calc(100px * var(--escala-mapa));
     width: calc(146px * var(--escala-mapa));
-    margin: 0 0 0 1%;
+    margin: 1.6% 0 0 4.4%;
 }
 
 #p1-p10 * {
@@ -68,13 +72,13 @@
     clip-path: polygon(0 31%, 80% 100%, 100% 67%, 18% 0);
     height: calc(51px * var(--escala-mapa));
     width: calc(62px * var(--escala-mapa));
-    margin: 10% 0 0 27%;
+    margin: 5% 0 0 18%;
 }
 
 #p-3{
     height: calc(57px * var(--escala-mapa));
     width: calc(77px * var(--escala-mapa));
-    margin: 2% 0 0 4%;
+    margin: 1.2% 0 0 2.8%;
 }
 
 #p-3 * {
@@ -99,12 +103,12 @@
 #p4-p5{
     height: calc(95px * var(--escala-mapa));
     width: calc(95px * var(--escala-mapa));
-    margin: 5% 0 0 21%;
+    margin: 16% 0 0 15%;
 }
 
 #p4-p5 * {
-    height: calc(95px * var(--escala-mapa));
-    width: calc(95px * var(--escala-mapa));
+    height: calc(95px * var(--escala-mapa) * 0.9);
+    width: calc(95px * var(--escala-mapa) * 0.9);
     position: absolute;
 }
 
@@ -117,9 +121,10 @@
 }
 
 #p6-p7-p9{
-    height: calc(115px * var(--escala-mapa));
-    width: calc(105px * var(--escala-mapa));
-    margin: 45% 0 0 0;
+    height: calc(115px * var(--escala-mapa) * 0.7);
+    width: calc(105px * var(--escala-mapa) * 0.7);
+    margin: 45% 0 0 -5%;
+    position: relative;
 }
 
 #p6-p7-p9 * {
@@ -147,42 +152,42 @@
     clip-path: polygon(2% 17%, 40% 100%, 100% 82%, 61% 0);
     height: calc(26px * var(--escala-mapa));
     width: calc(21px * var(--escala-mapa));
-    margin: 3% 0 0 10%;
+    margin: 0% 0 0 8%;
 }
 
 #p-11{
     clip-path: polygon(1% 69%, 35% 100%, 100% 33%, 65% 0);
     height: calc(72px * var(--escala-mapa));
     width: calc(72px * var(--escala-mapa));
-    margin: 173% 0 0 55%;
+    margin: 155% 0 0 70%;
 }
 
 #p-12{
     clip-path: polygon(71% 84%, 84% 88%, 91% 88%, 91% 80%, 89% 70%, 78% 50%, 64% 33%, 42% 18%, 
                         29% 14%, 17% 12%, 9% 13%, 7% 19%, 9% 28%, 17% 41%, 33% 61%, 55% 76%);
-    height: calc(30px * var(--escala-mapa));
-    width: calc(28px * var(--escala-mapa));
-    margin: 163% 0 0 31.6%;
+    height: calc(30px * var(--escala-mapa) * 1.8);
+    width: calc(28px * var(--escala-mapa) * 1.8);
+    margin: 143% 0 0 30%;
 }
 
 #p-13{
     clip-path: polygon(1% 39%, 44% 99%, 98% 59%, 56% 0);
     height: calc(31px * var(--escala-mapa));
     width: calc(31px * var(--escala-mapa));
-    margin: 30% 0 0 12%;
+    margin: 23% 0 0 22%;
 }
 
 #p-14{
     clip-path: polygon(0 37%, 62% 97%, 100% 59%, 35% 0);
-    height: calc(27px * var(--escala-mapa));
-    width: calc(27px * var(--escala-mapa));
-    margin: 0.8% 0 0 2.3%;
+    height: calc(27px * var(--escala-mapa) * 0.8);
+    width: calc(27px * var(--escala-mapa) * 0.8);
+    margin: 0.8% 0 0 6%;
 }
 
 #p-15{
     height: calc(95px * var(--escala-mapa));
     width: calc(75px * var(--escala-mapa));
-    margin: 15% 0 0 56%;
+    margin: 10% 0 0 70%;
 }
 
 #p-15 * {
@@ -203,7 +208,7 @@
     clip-path: polygon(0 80%, 77% 99%, 100% 19%, 23% 0);
     height: calc(8px * var(--escala-mapa));
     width: calc(8px * var(--escala-mapa));
-    margin: 0 0 0 56.5%;
+    margin: 0 0 0 55.8%;
 }
 
 @media (min-width: 460px) {
