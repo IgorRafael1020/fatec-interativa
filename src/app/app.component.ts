@@ -16,6 +16,6 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    AuthService.habilitarNavbar.subscribe((resp: boolean) => this.ativarNavbar = resp);
+    // AuthService.habilitarNavbar.subscribe((resp: boolean) => this.ativarNavbar = resp);
   }
 }
