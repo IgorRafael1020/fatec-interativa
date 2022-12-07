@@ -1,0 +1,135 @@
+<section class="container">
+    <h1 class="p-3 text-center display-5 mt-5">Atualizar Horários</h1>
+    <div class="mt-1 mb-3 container">
+        <div class="row mt-5">
+            <div class="col">
+                <ng-select name="predio" placeholder="Pesquisar predio..." 
+                [multiple]="false" 
+                [hideSelected]="false"
+                [(ngModel)]="predioSelecionado" 
+                [openOnEnter]="false"
+                (change)="pesquisarSalas()"
+                (keyup.enter)="pesquisarSalas()">
+                    <ng-option *ngFor="let predio of predios" [value]="predio">
+                    {{ predio.idPredio }} - {{ predio.predio }}
+                    </ng-option>
+                </ng-select>
+            </div>
+            <!-- <button type="button" class="col-2 btn btn-primary" (click)="pesquisarSalas()">Pesquisar</button> -->
+        </div>
+        
+        <div  class="row mt-5">
+            <div class="col">
+                <ng-select name="sala" placeholder="Pesquisar sala..." 
+                [multiple]="false" 
+                [hideSelected]="false"
+                [(ngModel)]="salaSelecionado" 
+                [openOnEnter]="false"
+                (change)="pesquisarAulas()"
+                (keyup.enter)="pesquisarAulas()">
+                    <ng-option *ngFor="let sala of salas" [value]="sala">
+                    {{ sala.idSala }} - {{ sala.sala }}
+                    </ng-option>
+                </ng-select>
+            </div>
+            <!-- <button type="button" class="col-2 btn btn-primary" (click)="pesquisarAulas()">Pesquisar</button> -->
+        </div>
+        
+        <button type="button" class="col-2 btn btn-primary mt-5" 
+        data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="novo()">Nova Aula</button>
+
+        <table class="mt-5 table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Aula</th>
+                <th scope="col">Dia</th>
+                <th scope="col">Horario</th>
+                <th scope="col">Professor</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <!-- <ng-container *ngFor="let aula of aulas">
+                <tr scope="row" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> -->
+                    <!-- <tr scope="row" (click)="onClick(aula, modalAula)"></tr> -->
+                  <!-- <th>{{ aula.idAula }}</th>
+                  <td>{{ aula.aula }}</td>
+                  <td>{{ aula.dia }}</td>
+                  <td>{{ aula.horario }}</td>
+                  <td>{{ aula.professor }}</td>
+              </ng-container> -->
+              <tr *ngFor="let aula of aulas" scope="row" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="onClick(aula)">
+                <th class="col">{{ aula.idAula }}</th>
+                <td class="col">{{ aula.aula }}</td>
+                <td class="col">{{ aula.dia | diaSemana}}</td>
+                <td class="col">{{ aula.horario }}</td>
+                <td class="col">{{ aula.professor }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</section>
+
+<!-- ========== MODAL ========== -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Atualizar Sala</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formAula">
+                <div class="form-floating mb-3">
+                    <input formControlName="idAula" class="form-control" name="id" placeholder="Id"/>
+                    <label for="inputId">Id</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input formControlName="aula" class="form-control" name="aula"placeholder="Aula"/>
+                    <label for="inputAula">Aula</label>
+                </div>
+                <!-- <div class="form-floating mb-3">
+                    <input formControlName="dia" class="form-control" name="dia" placeholder="Dia"/>
+                    <label for="inputDia">Dia</label>
+                </div> -->
+                <div class="form-floating mb-3">
+                    <select formControlName="dia" class="form-select" name="dia">
+                      <option [value]="2">Segunda</option>
+                      <option [value]="3">Terça</option>
+                      <option [value]="4">Quarta</option>
+                      <option [value]="5">Quinta</option>
+                      <option [value]="6">Sexta</option>
+                      <option [value]="7">Sábado</option>
+                    </select>
+                    <label for="inputDia">Dia</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input formControlName="horario" class="form-control"name="horario" placeholder="Horario"/>
+                    <label for="inputHorario">Horario</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input formControlName="professor" class="form-control" name="professor" placeholder="Professor"/>
+                    <label for="inputProfessor">Professor</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <select formControlName="idSala" class="form-select" name="sala">
+                      <option *ngFor="let sala of salas" [value]="sala.idSala"> {{ sala.sala }} </option>
+                    </select>
+                    <label for="inputSala">Sala</label>
+                </div>
+                
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" [disabled]="salvarDesabilitado" (click)="salvar()">Salvar</button>
+            <button type="button" class="btn btn-primary" [disabled]="editarDesabilitado" (click)="editar()">Editar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>

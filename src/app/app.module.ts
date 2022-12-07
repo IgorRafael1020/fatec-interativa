@@ -12,6 +12,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { PrediosModule } from './predios/predios.module';
 import { TabelaComponent } from './shared/components/tabela/tabela.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { CadastroComponent } from './core/cadastro/cadastro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DiaSemanaPipe } from './shared/pipes/dia-semana.pipe';
 
 
 @NgModule({
@@ -21,14 +24,18 @@ import { NgSelectModule } from '@ng-select/ng-select';
     MapaComponent,
     NavbarComponent,
     LoginComponent,
-    Error404Component
+    Error404Component,
+    CadastroComponent,
+    DiaSemanaPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PrediosModule,
     HttpClientModule,
-    NgSelectModule
+    NgSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

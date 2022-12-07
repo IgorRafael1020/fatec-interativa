@@ -25,7 +25,18 @@ export class AulaService {
         return this.http.get<Aula[]>(this.aulaURL + "/professor");
     }
 
-    update(aula: Aula): Observable<Aula>{
-        return this.http.put<Aula>(this.aulaURL, aula);
+    // update(aula: Aula): Observable<Aula>{
+    //     return this.http.put<Aula>(this.aulaURL, aula);
+    // }
+
+    salvar(aula: Aula): Observable<Aula> {
+        //cadastrar
+        if (aula.idAula == null) {
+            return this.http.post<Aula>(this.aulaURL, aula);
+        }
+        //editar
+        else {
+            return this.http.put<Aula>(this.aulaURL, aula);
+        }
     }
 }

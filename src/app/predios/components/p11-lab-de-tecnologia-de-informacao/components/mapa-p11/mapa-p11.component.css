@@ -9,16 +9,13 @@
 .base {
     clip-path: polygon(4.5% 85.8%, 20.1% 85.8%, 20.1% 90.5%, 36.1% 90.5%, 36.1% 85.8%, 51.5% 85.8%, 51.5% 90.5%, 67.8% 90.5%, 67.8% 85.8%,
     95.5% 85.8%, 95.5% 14.2%, 67.8% 14.2%, 67.8% 9.8%, 51.5% 9.8%, 51.5% 14.2%, 36% 14.2%, 36% 9.8%, 20.2% 9.8%, 20.2% 14.2%, 4.5% 14.2%);
-}
-
-#piso-1 {
+    height: 153px;
+    width: 293.4px;
     /*background: var(--cinza-fatec);*/
     /* background-image: url("E:\Fatec\TG\campus\p11.png"); */
     /*background-size: cover;*/
     /* height: 552.5px;
     width: 1059.5px; */
-    height: 510px;
-    width: 978px;
 }
 
 #cima * {
@@ -69,8 +66,8 @@
 }
 
 .sala-tipo-5{
-    height: calc(510 * 0.2745px);
-    width: calc(195.6 * 0.5624px);
+    height: calc(510 * 0.2745px * 0.3);
+    width: calc(195.6 * 0.5624px * 0.3);
     position: absolute;
     z-index: 1;
     margin-right: 0.2%;
@@ -85,31 +82,51 @@
     width: 6.13%;
 }
 
-/* @media (min-width: 460px) {
+@media (min-width: 460px) {
     .base {
-        height: 150px;
-        width: 420px;
+        height: 229.55px;
+        width: 440.1px;
+    }
+
+    .sala-tipo-5 {
+        height: calc(510 * 0.2745px * 0.45);
+        width: calc(195.6 * 0.5624px * 0.45);
     }
 }
 
 @media (min-width: 580px) {
     .base {
-        height: 196.875px;
-        width: 840px;
+        height: 280.5px;
+        width: 537.9px;
+    }
+
+    .sala-tipo-5 {
+        height: calc(510 * 0.2745px * 0.55);
+        width: calc(195.6 * 0.5624px * 0.55);
     }
 }
 
 @media (min-width: 768px) {
     .base {
-        height: 257.25px;
-        width: 1050px;
+        height: 382.5px;
+        width: 733.5px;
+    }
+
+    .sala-tipo-5 {
+        height: calc(510 * 0.2745px * 0.75);
+        width: calc(195.6 * 0.5624px * 0.75);
     }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .base {
         height: 337.5px;
         width: 945px;
+    }
+
+    .sala-tipo-5 {
+        height: calc(510 * 0.2745px);
+        width: calc(195.6 * 0.5624px);
     }
 }
 
@@ -118,11 +135,21 @@
         height: 337.5px;
         width: 945px;
     }
-}
+
+    .sala-tipo-5 {
+        height: calc(510 * 0.2745px);
+        width: calc(195.6 * 0.5624px);
+    }
+} */
 
 @media (min-width: 1400px) {
     .base {
-        height: 375px;
-        width: 1050px;
+        height: 510px;
+        width: 978px;
     }
-} */
+
+    .sala-tipo-5 {
+        height: calc(510 * 0.2745px);
+        width: calc(195.6 * 0.5624px);
+    }
+}

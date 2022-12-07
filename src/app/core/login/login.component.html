@@ -1,1 +1,27 @@
-<p>login works!</p>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5">
+  
+              <h3 class="mb-5 text-center">Fatec interativa</h3>
+  
+              <form [formGroup]="formLogin" action="p-4 p-md-5">
+                <div class="form-floating mb-3">
+                    <input formControlName="usuario" class="form-control" name="usuario" placeholder="Usuario"/>
+                    <label for="inputUsuario">Usuário</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input formControlName="senha" class="form-control" type="password" name="senha" placeholder="Senha"/>
+                    <label for="inputSenha">Senha</label>
+                </div>
+                <button class="btn btn-primary w-100" (click)="logar()">Logar</button>
+            </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

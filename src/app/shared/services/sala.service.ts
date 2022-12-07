@@ -21,6 +21,10 @@ export class SalaService {
       return this.http.get<Sala>(this.salaURL + "/" + idSala);
     }
 
+    getByPredio(idPredio: number): Observable<Sala[]>{
+      return this.http.get<Sala[]>(this.salaURL + "/predio/" + idPredio);
+    }
+
     update(predio: Sala): Observable<Sala>{
       return this.http.post<Sala>(this.salaURL, predio);
     }

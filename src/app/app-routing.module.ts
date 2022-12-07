@@ -11,6 +11,8 @@ import { LabDeProjetosMecanicosComponent } from './predios/components/p7-lab-de-
 import { LabDePolimerosEProcessosMetalurgicosComponent } from './predios/components/p9-lab-de-polimeros-e-processos-metalurgicos/lab-de-polimeros-e-processos-metalurgicos.component';
 import { CentralDeAulasComponent } from './predios/components/p10-central-de-aulas/central-de-aulas.component';
 import { LabDeTecnologiaDeInformacaoComponent } from './predios/components/p11-lab-de-tecnologia-de-informacao/lab-de-tecnologia-de-informacao.component';
+import { LoginComponent } from './core/login/login.component';
+import { CadastroComponent } from './core/cadastro/cadastro.component';
 
 
 const routes: Routes = [
@@ -27,6 +29,9 @@ const routes: Routes = [
   { path: 'p9', component: LabDePolimerosEProcessosMetalurgicosComponent },
   { path: 'p10', component: CentralDeAulasComponent },
   { path: 'p11', component: LabDeTecnologiaDeInformacaoComponent },
+
+  { path: 'login', component: LoginComponent },
+  { path: 'cadastro', component: CadastroComponent },
 
   { path: '**', redirectTo: 'campus' }
 
