@@ -30,13 +30,13 @@ export class AulaService {
     // }
 
     salvar(aula: Aula): Observable<Aula> {
-        //cadastrar
-        if (aula.idAula == null) {
-            return this.http.post<Aula>(this.aulaURL, aula);
-        }
         //editar
-        else {
+        if (aula.idAula) {
             return this.http.put<Aula>(this.aulaURL, aula);
+        }
+        //cadastrar
+        else {
+            return this.http.post<Aula>(this.aulaURL, aula);
         }
     }
 }
